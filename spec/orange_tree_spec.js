@@ -1,7 +1,3 @@
-let orange = require("../orange")
-let orangeTree = require("../orange_tree")
-
-
 describe("OrangeTree", () => {
 
   let tree;
@@ -36,11 +32,11 @@ describe("OrangeTree", () => {
       // This should be more explicit. How much should the tree grow?
     });
 
-    // If the tree is old enough to bear fruit 
+    // If the tree is old enough to bear fruit
     it("should cause the tree to produce oranges", () => {
 
     });
-    
+
   });
 
   xdescribe("isMature", () => {
@@ -87,4 +83,3 @@ describe("OrangeTree", () => {
     });
   });
 });
-
