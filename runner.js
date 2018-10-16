@@ -1,8 +1,9 @@
-let orange = require('./orange')
-let orange_tree = require('./orange_tree')
+const orangeModule = require('./orange')
+const orangeTreeModule = require('./orange_tree')
 
 
-tree = new orange_tree.OrangeTree();
+let orange = new orangeModule();
+let tree = new orangeTreeModule();
 
 // # Let seasons pass until the tree is ready to bear fruit.
 while(!tree.mature) {

@@ -1,4 +1,4 @@
-class Orange {
+module.exports = class Orange {
 
   constructor() {
   	this.diameter = this.randomDiameter();

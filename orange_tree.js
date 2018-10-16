@@ -1,4 +1,4 @@
-class OrangeTree {
+module.exports = class OrangeTree {
 
   passGrowingSeason(){
 
