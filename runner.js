@@ -4,6 +4,7 @@ const orangeTreeModule = require('./orange_tree')
 
 let orange = new orangeModule();
 let tree = new orangeTreeModule();
+console.log(orange)
 
 // # Let seasons pass until the tree is ready to bear fruit.
 while(!tree.mature) {
