@@ -7,7 +7,7 @@ let tree = new orangeTreeModule();
 console.log(orange)
 
 // # Let seasons pass until the tree is ready to bear fruit.
-while(!tree.mature) {
+while(!tree.isMature) {
   tree.passGrowingSeason;
 }
 
