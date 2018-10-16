@@ -10,13 +10,13 @@ describe("OrangeTree", () => {
   // You'll need to switch `xdescribe( o `describe` when you're ready
   //  to implement each set of tests.
 
-  xdescribe("age", () => {
+  describe("age", () => {
     it("has an age", () => {
 
     });
   });
 
-  xdescribe("height", () => {
+  describe("height", () => {
     it("has a height", () => {
 
     });
