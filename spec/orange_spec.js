@@ -1,5 +1,3 @@
-const orange = require("../orange.js")
-
 describe("Orange"){
 	let orange;
 
