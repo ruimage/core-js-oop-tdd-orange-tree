@@ -7,7 +7,7 @@ class OrangeTree {
 
 
   //  Returns true if the tree is old enough to bear fruit (6), false otherwise
-  mature(){
+  isMature(){
 
   }
 
@@ -29,3 +29,5 @@ class OrangeTree {
     //  orange-picking logic goes here
 
 }
+
+module.exports = OrangeTree;
