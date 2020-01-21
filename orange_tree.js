@@ -21,7 +21,7 @@ class OrangeTree {
   //  Returns an Orange if there are any
   //  Raises a NoOrangesError otherwise
   pickAnOrange() {
-    if(!this.hasOranges(){
+    if(!this.hasOranges()) {
       throw Error("This tree has no oranges");
     }
   }

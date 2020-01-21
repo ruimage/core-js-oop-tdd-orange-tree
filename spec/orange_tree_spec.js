@@ -1,3 +1,5 @@
+const OrangeTree = require('../orange_tree');
+
 describe("OrangeTree", () => {
 
   let tree;
