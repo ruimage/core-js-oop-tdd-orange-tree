@@ -1,3 +1,5 @@
+const Orange = require('../orange');
+
 describe("Orange", () => {
 	let orange;
 
