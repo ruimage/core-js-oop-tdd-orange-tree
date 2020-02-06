@@ -1,9 +1,6 @@
-const orangeModule = require('./orange')
-const orangeTreeModule = require('./orange_tree')
-
-
-let orange = new orangeModule();
-let tree = new orangeTreeModule();
+// TODO: Должен выводить все в DOM.
+let orange = new Orange();
+let tree = new OrangeTree();
 console.log(orange)
 
 // Let seasons pass until the tree is ready to bear fruit.
@@ -12,7 +9,7 @@ while(!tree.isMature()) {
 }
 
 
-// # Report yearly harvest information for the lifetime of the tree.
+// Report yearly harvest information for the lifetime of the tree.
 while(!tree.isDead()){
   tree.passGrowingSeason();
   harvestedOranges = [];
@@ -21,7 +18,7 @@ while(!tree.isDead()){
     harvestedOranges.push(tree.pickAnOrange())
   }
 
- // average_orange_diameter = # Need to calculate the average diameter for this harvest.
+ // average_orange_diameter = Need to calculate the average diameter for this harvest.
 
   console.log(
     `
