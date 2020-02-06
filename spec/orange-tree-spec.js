@@ -1,5 +1,4 @@
-const OrangeTree = require('../orange_tree');
-
+// Test-Driven Development
 describe("OrangeTree", () => {
 
   let tree;
@@ -7,10 +6,6 @@ describe("OrangeTree", () => {
   beforeEach(() => {
     tree = new OrangeTree();
   });
-
-
-  // You'll need to switch `xdescribe( o `describe` when you're ready
-  //  to implement each set of tests.
 
   describe("age", () => {
     it("has an age", () => {
@@ -24,7 +19,7 @@ describe("OrangeTree", () => {
     });
   });
 
-
+  // Убери 'x' из `xdescribe`, чтобы включить эти тесты. 
   xdescribe("passGrowingSeason", () => {
     it("should change the tree age", () => {
 
@@ -71,7 +66,7 @@ describe("OrangeTree", () => {
     });
   });
 
-  xdescribe("pick_an_orange", () => {
+  xdescribe("pickAnOrange", () => {
     it("should return an orange from the tree", () => {
 
     });
