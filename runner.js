@@ -1,7 +1,6 @@
-// TODO: Должен выводить все в DOM.
 let orange = new Orange();
 let tree = new OrangeTree();
-console.log(orange)
+const reportsBlock = document.getElementById('reports');
 
 // Let seasons pass until the tree is ready to bear fruit.
 while(!tree.isMature()) {
@@ -12,24 +11,36 @@ while(!tree.isMature()) {
 // Report yearly harvest information for the lifetime of the tree.
 while(!tree.isDead()){
   tree.passGrowingSeason();
-  harvestedOranges = [];
+  let harvestedOranges = [];
 
   while(tree.hasOranges()) {
     harvestedOranges.push(tree.pickAnOrange())
   }
 
- // average_orange_diameter = Need to calculate the average diameter for this harvest.
+  let averageOrangeDiameter;
+ // averageOrangeDiameter = Need to calculate the average diameter for the harvest.
 
-  console.log(
-    `
-    HARVEST_REPORT
-    YEAR ${tree.age} REPORT
-    -----------------------
-    Height: ${tree.height} feet.
-    Harvest: ${harvestedOranges.length} oranges with an average
-    diameter of ${averageOrangeDiameter} inches.
-    `
-  )
+    const report = document.createElement('div');
+    report.innerHTML =`
+      <b>HARVEST_REPORT</b>
+      <br/>
+      YEAR ${tree.age} REPORT
+      <br/>
+      Height: ${tree.height} feet.
+      <br/>
+      Harvest: ${harvestedOranges.length} oranges with an average
+      <br/>
+      diameter of ${averageOrangeDiameter} inches.
+      <br/>
+      <br/>
+      -----------------------
+      <br/>
+      <br/>
+    `;
+    reportsBlock.appendChild(report);
+  
 }
 
-console.log("Alas, the tree, she is dead!")
+const lastReport = document.createElement('div');
+lastReport.innerHTML = '<h2>Alas, the tree, she is dead!</h2>'
+reportsBlock.appendChild(lastReport)

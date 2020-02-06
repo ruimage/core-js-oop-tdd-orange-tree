@@ -66,7 +66,7 @@ describe("OrangeTree", () => {
     });
   });
 
-  xdescribe("pick_an_orange", () => {
+  xdescribe("pickAnOrange", () => {
     it("should return an orange from the tree", () => {
 
     });
