@@ -1,5 +1,5 @@
 // Test-Driven Development
-describe("OrangeTree", () => {
+describe('OrangeTree', () => {
 
   let tree;
 
@@ -7,75 +7,75 @@ describe("OrangeTree", () => {
     tree = new OrangeTree();
   });
 
-  describe("age", () => {
-    it("has an age", () => {
+  describe('age', () => {
+    it('has an age', () => {
 
     });
   });
 
-  describe("height", () => {
-    it("has a height", () => {
+  describe('height', () => {
+    it('has a height', () => {
 
     });
   });
 
   // Убери 'x' из `xdescribe`, чтобы включить эти тесты. 
-  xdescribe("passGrowingSeason", () => {
-    it("should change the tree age", () => {
+  xdescribe('passGrowingSeason', () => {
+    it('should change the tree age', () => {
 
     });
 
-    it("should make the tree grow", () => {
+    it('should make the tree grow', () => {
       // This should be more explicit. How much should the tree grow?
     });
 
     // If the tree is old enough to bear fruit
-    it("should cause the tree to produce oranges", () => {
+    it('should cause the tree to produce oranges', () => {
 
     });
 
   });
 
-  xdescribe("isMature", () => {
-    it("returns true if tree is old enough to bear fruit", () => {
+  xdescribe('isMature', () => {
+    it('returns true if tree is old enough to bear fruit', () => {
 
     });
 
-    it("returns false if tree is not old enough to bear fruit", () => {
-
-    });
-  });
-
-  xdescribe("isDead", () => {
-    it("should return false for an alive tree", () => {
-
-    });
-
-    it("should return true for a dead tree", () => {
+    it('returns false if tree is not old enough to bear fruit', () => {
 
     });
   });
 
-  xdescribe("hasOranges", () => {
-    it("should return true if oranges are on the tree", () => {
+  xdescribe('isDead', () => {
+    it('should return false for an alive tree', () => {
 
     });
 
-    it("should return false if the tree has no oranges", () => {
+    it('should return true for a dead tree', () => {
 
     });
   });
 
-  xdescribe("pickAnOrange", () => {
-    it("should return an orange from the tree", () => {
+  xdescribe('hasOranges', () => {
+    it('should return true if oranges are on the tree', () => {
 
     });
 
-    it("the returned orange should no longer be on the tree", () => {
+    it('should return false if the tree has no oranges', () => {
+
+    });
+  });
+
+  xdescribe('pickAnOrange', () => {
+    it('should return an orange from the tree', () => {
 
     });
 
-    it("should raise an error if the tree has no oranges", () => {
+    it('the returned orange should no longer be on the tree', () => {
+
+    });
+
+    it('should raise an error if the tree has no oranges', () => {
 
     });
   });
