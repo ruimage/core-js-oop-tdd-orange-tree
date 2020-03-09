@@ -3,10 +3,10 @@ describe('Orange', () => {
 
 	beforeEach(() => {
 		orange = new Orange();
-		desiredDiameterRange = [2.5, 3.2]
+		desiredDiameterRange = [2, 3.2]
 	});
 
-	it('has a diameter more than 2.5', () => {
+	it('has a diameter more than 2', () => {
 		expect(orange.diameter >= desiredDiameterRange[0]).toBeTruthy();
 	});
 
