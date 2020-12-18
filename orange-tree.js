@@ -21,3 +21,5 @@ class OrangeTree {
     //  orange-picking logic goes here
   }
 }
+
+module.exports = OrangeTree;
