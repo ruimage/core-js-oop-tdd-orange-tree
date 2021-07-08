@@ -1,54 +1,52 @@
-## Модель апельсинового дерева
-
-Фермер Федор заинтересован в создании модели своей апельсиновой фермы. Как доказательство своей концепции, он надеется смоделировать одно апельсиновое дерево и его ежегодное производство на протяжении всей его жизни. Федор начал работать над программой, но успех его фермы оставил ему совсем мало времени, чтобы продолжить разработку. Тебя наняли, чтобы сделать для него приложение.
-
-В этой задаче ты будешь разрабатывать собственный класс: `OrangeTree`. Делать это необходимо используя подход `TDD (Test-Driven Development)`. Сначала тебе предстоит продумать логику функционирования `OrangeTree`, понять как должны работать функции, что и в каких случаях они должны возвращать, и, наконец, отобразить это в тестах `orange-tree.spec.js`. Там есть заготовка для тебя.
+## Orange tree model
 
 
-### Pre-release. Обзор предоставленного кода
+Fedor, a farmer, is interested in creating a model of his orange farm. As a proof of the concept, he hopes to model one orange tree and its annual production throughout his life. Fedor started working on the program but the success of his farm left him very little time to continue developing the program. So you were hired to make an app for him.
 
-Федор уже начал разрабатывать это приложение. Он создал класс `Orange`, который ты будешь использовать – на твоем апельсиновом дереве будут расти апельсины (Удивительно, не правда ли?). Федор только начал заниматься созданием класса `OrangeTree`. Он написал несколько методов и  несколько комментариев о том, что они должны делать; он также предоставил некоторый код для тестирования апельсинового дерева. И, наконец, он запрограммировал сценарий всей жизни дерева в скрипте `runner.js`, который подцепляется в `TreeLifeRunner.html`, чтобы ты мог(ла) увидеть как развивалось дерево, какие плоды и в каком количестве приносило на протяжении всей своей жизни. Просмотри код, чтобы понять что планировал сделать Федор.
-
-### Release 0. Начни с тестов!
-
-Здесь представлены некоторые детали, которые Федор предоставил для того, чтобы ты понимал(а) его видение того, какое поведение от модели апельсинового дерева он ожидал. Помни о том, что это ранняя версия приложения, подтверждающая лишь основную концепцию, поэтому не волнуйся о моделировании таких вещей, как влияние температуры на производство и т.д. Ты строишь самую базовую модель.
-
-Каждая из деталей, написанных Федором, должна быть переведена в тесты, чтобы можно было убедиться, что твоя модель соответствует ожиданиям. В скобках Федор предоставил метод, которым он намеревался сопоставить эти детали. Твой класс может спокойно включать в себя и другие методы, помимо указанных.
-
-__Требования:__
-- Дерево должно быть определенного возраста (`.age`).
-- Дерево должно иметь высоту (`.height`).
-- Каждый вегетационный период (`.passGrowingSeason()`) 
-  - Любые неубранные апельсины из предыдущего сезона должны упасть.
-  - Дерево должно стареть на 1 год.
-  - Дерево должно расти на 2.5 фута в высоту до тех пор, пока оно не достигнет максимальной высоты - скажем, 25 футов.
-  - Дерево должно приносить плоды, если оно зрелое (то есть ему не менее шести лет) - скажем, от 100 до 300 апельсинов (`class Orange`).
-- Необходимо проверить, достаточно ли дерево зрелое для производства фруктов (`.isMature()`).
-- Дерево должно погибнуть в возрасте 100 лет, и тебе необходимо проверить, погибло ли оно (`.isDead()`).
-- Нужно так же проверить, есть ли на дереве апельсины (`hasOranges()`).
-- Тебе необходимо сорвать апельсин с дерева (`.pickAnOrange()`) или спровоцировать вывод ошибки в случае, если ты попытаешься взять апельсин, а на дереве их нет.
-
-Напоминаем, что ты должен начать с тестов. Напиши тесты, которые будут проверять соответствие работы твоих классов вышеприведенным требованиям. Заготовки тестов уже есть.
+In this exercise you'll be developing your own class: `OrangeTree`. You need to use `TDD (Test-Driven Development)` for that. First you have to think about the logic of `OrangeTree`, understand how the functions should work, in which cases and what they need to return, and finally, display all of it in the `orange-tree.spec.js` tests. It's all prepared for you there.
 
 
-### Release 1. Модель апельсинового дерева - пусть все твои тесты пройдут
+### Pre-release. Review of the provided code
 
-Когда тесты будут готовы - запрограммируй все необходимые методы классов `Orange` и `OrangeTree`, чтобы в итоге все твои тесты проходили успешно. У тебя должны получиться следующие рабочие методы:
+Fedor has already started developing this application. He created an `Orange` class that you will use - oranges will grow on your orange tree (Amazing, isn't it?). Fedor has just started creating the `OrangeTree` class. He wrote a few methods and a few comments on what they should do; he also wrote some code to test the orange tree. And finally, he programmed the scenario of the whole life of the tree in the script `runner.js` which is hooked up in `TreeLifeRunner.html`, so that you can see how the tree has developed, what fruits and in what quantity it has borne throughout its life. Review the code to understand what Fedor planned to do.
+
+### Release 0. Start with the tests!
+
+Here are some of the details that Fedor provided so that you can understand his vision of the behavior he expects from the orange tree model. Remember that this is an early version of the app that only supports the basic concept so don't worry about simulating things like temperature effects on production, etc. You are building the most basic model.
+
+Each of the details Fedor describes should be translated into tests so that you can make sure your model meets the expectations. In parentheses, Fedor provided the method by which he intends to match these details. Your class can safely include other methods besides the ones listed.
+
+__Requirements:__
+- The tree must be of a certain age (`.age`).
+- The tree must be of a certain height (`.height`).
+- Every growing season (`.passGrowingSeason()`) 
+  - Any unharvested oranges from the previous season should fall.
+  - The tree must age by 1 year.
+  - The tree must grow 2.5 feet tall until it reaches its maximum height - let's say 25 feet.
+  - The tree must bear fruit if it is mature (i.e. at least six years old) - let's say, 100 to 300 oranges (`class Orange`).
+- It is necessary to check if the tree is mature enough for fruit production (`.isMature()`).
+- The tree should die at the age of 100, and you need to check if it's dead (`.isDead()`).
+- You also need to check if there are oranges on the tree. (`hasOranges()`).
+- You need to pick an orange from the tree (`.pickAnOrange()`) or throw an error if you try to pick an orange but there aren't any.
+
+Remember you that you must start with the tests. Write tests that will check that your classes are running according to the above requirements. Test templates are already there.
+
+### Release 1. Orange tree model - make sure all of your tests pass
+
+When the tests are ready, program all the necessary methods of the `Orange` and` OrangeTree` classes, so that in the end all your tests will pass successfully. You should have the following working methods:
 - `passGrowingSeason()`
 - `isMature()`
 - `isDead()`
 - `hasOranges()`
 - `pickAnOrange()`
 
+### Release 2. Complete the production simulation script
 
-### Release 2. Заверши скрипт моделирования производства
+You now have fully tested and functional `Orange` and `OrangeTree` classes. It's time to use these models in your application. Remember that Fedor wants to see the annual orange tree production throughout his life.
 
-Теперь у тебя есть полностью проверенные и функциональные классы `Orange` и `OrangeTree`. Пришло время использовать эти модели в приложении. Помни, что Федор хочет видеть ежегодное производство апельсинового дерева в течение всей его жизни.
+You need to complete the `runner.js` script. In particular, you need to evaluate the local variable `averageOrangeDiameter`, which says what is the average diameter of the oranges. Run `TreeLifeRunner.html` to see your classes in action.
 
-Тебе нужно доделать скрипт `runner.js`. В частности, тебе нужно вычислить локальную переменную `averageOrangeDiameter`, которая говорит какой средний диаметр апельсинов. Запусти `TreeLifeRunner.html`, чтобы увидеть свои классы в действии.
+## Conclusion
 
-
-## Заключение
-
-Ты смоделировал(а) объект из реального мира в соответствии с потребностями приложения. Впредь ты будешь делать такие вещи часто. Тебе приходилось принимать решения относительно внутреннего состояния дерева (то есть, какие переменные ему нужны). У каждого дерева следует отслеживать возраст, высоту и количество апельсинов. И ты можешь использовать эти показатели для того, чтобы рассчитать больше показателей, касающихся дерева: достаточно ли оно взрослое для того, чтобы приносить плоды, погибло ли оно, и растут ли на нем апельсины?
+You have modeled something from the real world according to the needs of the application. Henceforth, you will do such things often. You had to make decisions about the internal state of the tree (that is, what variables it needs). The age, height and number of oranges of each tree should be tracked. And you can use these metrics to calculate more metrics about the tree: is it old enough to bear fruit, is it dead, and is it growing oranges?
 
