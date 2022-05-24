@@ -1,7 +1,7 @@
-const Orange = require('./orange');
+ // const Orange = require('./orange');
 
 class OrangeTree {
-  constructor(age, height) {
+  constructor(age = 0, height = 0) {
     this.age = age;
     this.height = height;
     this.orangesOnTree = [];
@@ -51,4 +51,4 @@ class OrangeTree {
   }
 }
 
-module.exports = OrangeTree;
+// module.exports = OrangeTree;
